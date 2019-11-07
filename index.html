@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+      
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+    
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    
+        <link rel="icon" href="images/glif.png">
+
+
+    <style>
+        .d-block {
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-bottom: 10%;
+        }
+
+        .fart {
+            padding-left: 5%;
+            padding-right: 5%;
+            max-width: 900px;
+        }
+
+        .fart1 {
+            margin-top: -10%;
+            padding-right: 5%;
+
+            max-width: 900px;
+        }
+
+        .slidetext {
+            padding-bottom: 5%;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            /* padding-top: 10%; */
+            /* font-weight: bold; */
+        }
+
+         p {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 13px;
+         }
+
+        .card-img-top1 {
+            padding-bottom: 5%;
+            /* padding-top: 50px; */
+            max-width: 150px; 
+       }
+
+        .container1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+
+        }
+
+        .textgrade {
+            font-size: 30px;
+            font-weight: bolder;
+            background: -webkit-linear-gradient(rgb(74, 117, 238), rgb(39, 35, 95));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* padding: 10px 5% 10px 5%; */
+        }
+
+        .atagbut {
+            background-color: rgb(45, 160, 102);
+            border: none;
+            color: white;
+            padding: 10px 70px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 12px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        .atagbuta {
+            background-color: rgb(245, 245, 245);
+            border: none;
+            color: rgb(0, 0, 0);
+            padding: 10px 50px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 7px;
+            cursor: pointer;
+            border-radius: 20px;
+    
+        }
+
+        .navbar-brand {
+            width: 250px;
+        }
+
+
+        .col-6 {
+            position: relative;
+            width: 100%;
+            padding-right: 3px;
+            padding-top: 3px;
+            padding-left: 3px;
+            padding-bottom: 3px;
+        }
+
+.col- {
+text-align: center;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+        .d-block {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 0%;
+    max-width: 500px;
+        }
+
+        .toppadding {
+            padding-top: 47px;
+        }
+
+           .navbar-toggler {
+            border: none;
+            outline: none;
+        }
+
+        .srhwidth {
+            max-width: 500px;
+        }
+
+        .testfont1 {
+            text-align: left;
+        }
+
+        .col-4 {
+
+font-size: 11px;
+padding-top: 20px;
+
+}
+h4 {
+            font-weight: 200;
+            padding-bottom: 20px;
+         }
+
+
+
+        .video-containeriframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+   .navbar-toggler {
+            border: none;
+            outline: none;
+        }
+
+              .col-4 {
+
+font-size: 11px;
+padding-top: 20px;
+
+}
+
+/* #container
+{
+    height:2000px;    
+} */
+
+#container DIV
+{ 
+    margin:10%; 
+    /* padding:50px;  */
+    background-color:rgb(255, 255, 255); 
+}
+
+.hideme
+{
+    opacity:0;
+}
+
+.card-img-top {
+    max-width: 900px;
+    /* min-width: 400px; */
+}
+
+.card-img-top4 {
+    max-width: 150px;
+    /* min-width: 400px; */
+}
+
+.farter {
+    font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            color: black;
+}
+
+.graybackground {
+    background-color: rgb(248, 248, 248);
+}
+
+.card-img-top9 {
+    max-width: 150px;
+    /* min-width: 400px; */
+}
+
+        
+    </style>
+    <title>Speakerbook Pharma CRM. Leading RX Analytics. Healthcare Market Insights. </title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light">
+        <a href="index.html"> <img class="navbar-brand" src="images/logo3.png" alt="Card image cap"></a>
+
+         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+       
+         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+           <!-- <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+             <li class="nav-item active">
+               <a class="nav-link" href="speakerbook.html">CRM</a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="Analytics.html">Analytics</a>
+               </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="market.html">Market Intel</a>
+               </li>
+             <li class="nav-item">
+               <a class="nav-link" href="blog.html">Blog</a>
+             </li>
+           </ul> -->
+         </div>
+       </nav>
+
+
+    <div class="container fart">
+         <center>  <h1 class="textgrade">Powerful RX Applications</h1></center> 
+
+        <img class="card-img-top" src="images/main1.png" alt="Card image cap">
+        <center>
+            <!-- <h1 class="textgrade">We Bring Speaker Program Optimization to Healthcare</h1> -->
+            <!-- <h1 class="textgrade">Pharma CRM built from competitive data.</h1> -->
+
+        </center>
+
+            <!-- <p>Overpaying of underperforming data</p>
+            <p>Communicating with the wrong people </p>
+            <p>Unable to view Competitor insights</p> -->
+
+
+        <center>
+            <div class="graybackground">
+                <h5 class="toppadding">Healthcare CRM Problems </h5>
+                <div class="container">
+                        <div class="row">
+                                <div class="col-4">
+                                        <center>    
+                                                <img class="card-img-top card-img-top4" src="images/aa_1.png" alt="HTML tutorial" >
+                                              </center> 
+                                        <center>    <p>Communicating with the wrong people </p></center>  
+                                       </div>
+                          <div class="col-4">
+                                <center>    
+                                        <img class="card-img-top card-img-top4" src="images/aa_2.png" alt="HTML tutorial" >
+                                      </center> 
+                          <center>     <p>Overpaying of underperforming data</p></center> 
+                            <!-- <center>  <a href="speakerbook.html">SpeakerBook</a></center> -->
+                          </div>
+                          <div class="col-4">
+                                <center>    
+                                        <img class="card-img-top card-img-top4" src="images/aa_3.png" alt="HTML tutorial" >
+                                      </center> 
+                          <center> <p>Lack of visibility to competitor insights</p></center>  
+                           <!-- <center> <a href="market.html"> Market Intel</a></center> -->
+                            </div>
+                        </div>
+                      </div>
+
+                <button type="button" class="btn btn-primary atagbut" data-toggle="modal" data-target="#exampleModal">
+                    Contact Us
+                  </button>
+                </div>
+        </center>
+
+
+        <center>  <h1 class="textgrade toppadding">SpeakerBook Healthcare Solutions</h1></center> 
+
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-4">
+
+                            <a href="speakerbook.html">
+                                    <img class="card-img-top card-img-top4" src="images/pill_crm.png" alt="HTML tutorial" >
+                                  </a>
+                    </div>
+                <div class="col-8">
+
+                    <h2 class="toppadding">SpeakerBook CRM for RX Results</h2>
+                    <p>SpeakerBook CRM is a reinvented Healthcare platform that provides AI solutions specifically for RX enterprise organizations. Deliver intelligent customer engagement.</p>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+
+                        <!-- <a class="card-img-top card-img-top1" href="Analytics.html" imageanchor="1"><img src="images/app_g.png"></a> -->
+                        <a href="Analytics.html">
+                                <img class="card-img-top card-img-top4" src="images/pill_data.png" alt="HTML tutorial" >
+                              </a>
+
+                </div>
+                <div class="col-8">
+
+                        <h2 class="toppadding">SpeakerBook Data Analytics </h2>
+                    <p>Analytic solutions and reports for better program managment. Program topics and provider type all within your region.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-4">
+
+                            <a href="market.html">
+                                    <img class="card-img-top card-img-top4" src="images/pill_intel.png" alt="HTML tutorial" >
+                                  </a>
+                    </div>
+                <div class="col-8">
+
+                        <h2 class="toppadding">SpeakerBook Competitive Intelligence </h2>
+                    <p>Improve field ops, sales, and marketing teams access to relevant intel. Target industry payments and professionals.</p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="container">
+    
+                <!-- <div id="monster">Hello</div> -->
+                <!-- <div>Hello</div> -->
+                <div class="">
+                        <center>
+                                <img class="card-img-top1 card-img-top" src="images/sb_3.png" alt="Card image cap">
+                        </center>
+                            <h4 class="padding">SpeakerBook Pharma CRM </h4>
+                            <p class="padding testfont">SpeakerBook matches the right speaker to the right audience using AI, powerful datasets, and detailed speaker profiles. </p>
+        
+                </div>
+                <div class="hideme">
+                        <center>
+                                <img class="card-img-top1 card-img-top" src="images/sb_2.png" alt="Card image cap">
+                        </center>
+                            <h4 class="padding">Speaker Program Optimization </h4>
+                            <p class="padding testfont">Adjust your touch points through the multichannel CRM. Use face to face, E-mail, web, or events to grow your program. </p>
+                </div>
+                <div class="hideme">
+                        <center>
+                                <img class="card-img-top1 card-img-top" src="images/mi_5b.png" alt="Card image cap">
+                        </center>
+                            <h4 class="padding">Targeted Filter Search</h4>
+                            <p class="padding testfont">Filter and customization data by patient demographics, topic certification, upcoming programs, specialties, or practice type.</p>
+                </div>
+                <div class="hideme">
+                        <center>
+                                <img class="card-img-top1 card-img-top" src="images/mi_5c.png" alt="Card image cap">
+                        </center>
+                            <h4 class="padding">Targeted Filter Search</h4>
+                            <p class="padding testfont">Filter and customization data by patient demographics, topic certification, upcoming programs, specialties, or practice type.</p>
+                </div>
+                <div class="hideme">
+                        <center>
+                                <img class="card-img-top1 card-img-top" src="images/g_1.png" alt="Card image cap">
+                        </center>
+                            <h4 class="padding">Key Opinion Leader List </h4>
+                            <p class="padding testfont">View Speakers and MSL's professional information and program schedules in your region.</p>
+                </div>
+               
+             
+      
+                <div class="hideme">
+                        <center>
+                                <img class="card-img-top1 card-img-top" src="images/g_2.png" alt="Card image cap">
+                        </center>
+                            <h4 class="padding">Target Regions</h4>
+                            <p class="padding testfont">Work within your region to attend local speaker events or expand into new territories to grow your market share.
+
+                                </p>
+                </div>
+                <!-- <div class="hideme">
+                        <center>
+                                <img class="card-img-top1 card-img-top" src="images/mi_1.png" alt="Card image cap">
+                        </center>
+                            <h4 class="padding">Target Competitors </h4>
+                            <p class="padding testfont">View multiple RX companies to keep updated on the industry </p>
+                </div>
+                <div class="hideme">
+                        <center>
+                                <img class="card-img-top1 card-img-top" src="images/mi_5.png" alt="Card image cap">
+                        </center>
+                            <h4 class="padding">Speaker Program Optimization</h4>
+                            <p class="padding testfont">Speakerbook's AI features gives field ops and sales teams a compeditive advantage</p>
+                </div> -->
+                
+            </div>
+
+            <script>
+            $(function(){  // $(document).ready shorthand
+                $('.monster').fadeIn('slow');
+              });
+              
+              $(document).ready(function() {
+                  
+                  /* Every time the window is scrolled ... */
+                  $(window).scroll( function(){
+                  
+                      /* Check the location of each desired element */
+                      $('.hideme').each( function(i){
+                          
+                          var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                          var bottom_of_window = $(window).scrollTop() + $(window).height();
+                          
+                          /* If the object is completely visible in the window, fade it it */
+                          if( bottom_of_window > bottom_of_object ){
+                              
+                              $(this).animate({'opacity':'1'},1500);
+                                  
+                          }
+                          
+                      }); 
+                  
+                  });
+                  
+              });
+
+</script>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                                <a href="index.html"> <img class="navbar-brand" src="images/logo3.png" alt="Card image cap"></a>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+    <!-- 
+                            <form action="https://docs.google.com/forms/d/e/1FAIpQLSfPYCl4c4FmSyVWsD2Kout4_lbxA6LBHiDGvtB-XrRp22tD_A/formResponse" target="_self"
+                                id="bootstrapForm" method="POST"> -->
+    
+                                <script type="text/javascript">var submitted=false;</script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"onload="if(submitted) {window.location='contact.html';}"></iframe>
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLSfPYCl4c4FmSyVWsD2Kout4_lbxA6LBHiDGvtB-XrRp22tD_A/formResponse" method="post" target="hidden_iframe"onsubmit="submitted=true;">
+    
+                                <!-- <fieldset>
+                                    <h2>Contact Information
+                                        <br>
+                                        <small></small>
+                                    </h2>
+                                </fieldset> -->
+    
+                                <h4 class="modal-title" id="exampleModalLabel">Let's figure out what works for you!</h4>
+
+                                <!-- Field type: "short" id: "1633920210" -->
+                                <fieldset>
+                                    <legend class="farter" for="1633920210">Name</legend>
+                                    <div class="form-group">
+                                        <input id="2005620554" type="text" name="entry.2005620554" class="form-control" required>
+                                    </div>
+                                </fieldset>
+    
+    
+                                <!-- Field type: "short" id: "227649005" -->
+                                <fieldset>
+                                    <legend class="farter" for="227649005">Email</legend>
+                                    <div class="form-group">
+                                        <input id="1045781291" type="text" name="entry.1045781291" class="form-control" required>
+                                    </div>
+                                </fieldset>
+    
+    
+                                <!-- Field type: "short" id: "1770822543" -->
+                                <!-- <fieldset>
+                                    <legend for="1770822543">Phone number</legend>
+                                    <div class="form-group">
+                                        <input id="1166974658" type="text" name="entry.1166974658" class="form-control">
+                                    </div>
+                                </fieldset> -->
+    
+    
+                                <!-- Field type: "paragraph" id: "1846923513" -->
+                                <fieldset>
+                                    <legend class="farter" for="1846923513">Comments</legend>
+                                    <div class="form-group">
+                                        <textarea id="839337160" name="entry.839337160" class="form-control" style="height:200px;font-size:14pt;"></textarea>
+                                    </div>
+                                </fieldset>
+    
+                                <input type="hidden" name="fvv" value="1">
+                                <input type="hidden" name="fbzx" value="-5650086590311247756">
+                                <!--
+          CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+          This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+          Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+          We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+      -->
+                                <input type="hidden" name="pageHistory" value="0">
+    
+                         <center> <input class="btn btn-primary atagbut" type="submit" value="Submit"> </center>    
+                            </form>
+    
+                            <img class="container1" src="images/footer.png" alt="footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <center>  <h1 class="textgrade toppadding">Top Clients</h1></center> 
+
+
+    <img class="card-img-top " src="images/companies.png" alt="HTML tutorial" >
+
+
+<center>
+        <div id="carouselExampleIndicators" class="carousel slide srhwidth" data-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <center>
+                        <img class="d-block w-100 container5" src="images/person4.png" alt="First slide">
+
+                        <h5>Sarah - Biotech</h5>
+                        <p class="testfont1">We deployed a SpeakerBook MSL designed for the Biotech Representative. SpeakerBook's deep insights gave my reps
+                            a competitive edge. We will never go back to Excel and Spreadsheets.
+                        </p>
+                        <p>Overall Rating</p>
+                        <div class="progress">
+                                <div class="progress-bar " role="progressbar " style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">90%</div>
+                              </div>
+                              <p>Features / Functionality</p>
+                              <div class="progress">
+                                    <div class="progress-bar " role="progressbar" style="width: 95%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">95%</div>
+                                  </div>
+                                  <p>Likelihood to Recommend</p>
+                                  <div class="progress">
+                                        <div class="progress-bar " role="progressbar" style="width: 98%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">98%</div>
+                                      </div>
+                    </center>
+
+                </div>
+                <div class="carousel-item">
+                    <center>
+                        <img class="d-block w-100 container5" src="images/person2.png" alt="Second slide">
+                        <h5>Randy - Pharma</h5>
+                        <p class="testfont1"> I was able to better know my customer and sales force.
+                            This helped us market our prototypes faster to speed up approvals. Speakerbook is built
+                            for professional Pharma sales organizations, not mass market models.</p>
+                            <p>Overall Rating</p>
+                            <div class="progress">
+                                    <div class="progress-bar " role="progressbar" style="width: 97%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">97%</div>
+                                  </div>
+                                  <p>Features / Functionality</p>
+                                  <div class="progress">
+                                        <div class="progress-bar " role="progressbar" style="width: 95%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">95%</div>
+                                      </div>
+                                      <p>Likelihood to Recommend</p>
+                                      <div class="progress">
+                                            <div class="progress-bar " role="progressbar" style="width: 92%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">92%</div>
+                                          </div>
+                    </center>
+                </div>
+                <div class="carousel-item">
+                    <center>
+                        <img class="d-block w-100 container5" src="images/person3.png" alt="Third slide">
+                        <h5>Paulo - Private Practice</h5>
+                        <p class="testfont1">RX organizations have found me through SpeakerBook. My speaking events are become filled with SpeakerBook’s contacts. 
+                            I've forged relationships with great teams which has given me the ability to better care for my patients.  </p>
+                            <p>Overall Rating</p>
+                            <div class="progress">
+                                    <div class="progress-bar " role="progressbar" style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                  </div>
+                                  <p>Features / Functionality</p>
+                                  <div class="progress">
+                                        <div class="progress-bar " role="progressbar" style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                      </div>
+                                      <p>Likelihood to Recommend</p>
+                                      <div class="progress">
+                                            <div class="progress-bar " role="progressbar" style="width: 95%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">95%</div>
+                                          </div>
+                        </center>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </center>
+
+        <center>
+
+                
+
+
+            <!-- <h1 class="talk">Ready to Talk?</h1> -->
+        
+
+ 
+        
+<!-- 
+ <div class="container">
+            <div class="row">
+              <div class="col-4">
+              <center>     <a href="Analytics.html">
+                            <img class="card-img-top card-img-top4" src="images/app_sb.png" alt="HTML tutorial" >
+                          </a></center> 
+                <center>  <a href="speakerbook.html">SpeakerBook</a></center>
+              </div>
+              <div class="col-4">
+                 <center> <a href="Analytics.html">
+                            <img class="card-img-top card-img-top4" src="images/app_g.png" alt="HTML tutorial" >
+                          </a></center>  
+                <center> <a href="Analytics.html">G-BluePrint</a></center>
+                </div>
+              <div class="col-4">
+
+              <center>    <a href="Analytics.html">
+                            <img class="card-img-top card-img-top4" src="images/app_mt.png" alt="HTML tutorial" >
+                          </a></center>  
+               <center> <a href="market.html"> Market Intel</a></center>
+                </div>
+            </div>
+          </div>
+
+
+          <center>
+                <button type="button" class="btn btn-primary atagbut" data-toggle="modal" data-target="#exampleModal">
+                        Contact Us
+                      </button>
+         </center>
+           -->
+                 
+           <center>  <h1 class="textgrade toppadding">Improve Sales And Lower Cost</h1></center> 
+      
+           
+                    <button type="button" class="btn btn-primary atagbut" data-toggle="modal" data-target="#exampleModal">
+                        Contact Us Today
+                      </button>
+                </center>
+
+        </center>
+
+      
+
+    </div>
+
+
+   
+
+
+    <img class="container1" src="images/footer.png" alt="footer">
+
+
+
+    <!-- <p>Field Ops, Sales, Marketing </p> -->
+
+</body>
+
+
+
+</html>
